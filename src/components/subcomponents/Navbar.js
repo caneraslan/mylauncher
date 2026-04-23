@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 const HOMEKEY =' ➧ HOME ';
-const BLOGKEY = '➧ MY BLOGS';
+const BLOGKEY = '➧ MY APPS';
 const ABOUTKEY = '➧ ABOUT ME';
 const Navbar = ( 
   {

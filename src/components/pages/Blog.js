@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import data from "../../myapps.json";
 
 
 const BlogContext = ({ title, picture, content }) => {
@@ -17,63 +18,7 @@ const BlogContext = ({ title, picture, content }) => {
 const Blog = () => {
   const [page, setPage] = useState(0);
   console.log(page);
-  const myblogs = [ 
-    {
-      title: 'New Subject 1',
-      picture: 'C++',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 2',
-      picture: 'C#',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 3 ',
-      picture: 'Java',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 4 ',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 5',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 6',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 7',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 8',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 9',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 10',
-      picture: 'Algorithm',
-      content: 'New Content'
-    },
-    {
-      title: 'New Subject 11',
-      picture: 'Algorithm',
-      content: 'New Content'
-    }
-  ];
+  const myblogs = data.myapps;
 
   const buttons = Math.ceil(myblogs.length/4);
   return (
@@ -86,7 +31,7 @@ const Blog = () => {
       {myblogs.slice(page*4,(page+1)*4).map((e, index) => (
         <BlogContext 
           key={index} 
-          title={e.title} 
+          title={(e.title).toUpperCase()} 
           picture={e.picture} 
           content={e.content} 
         />

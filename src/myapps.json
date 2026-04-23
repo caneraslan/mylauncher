@@ -1,0 +1,62 @@
+{
+    "myapps": [
+        {
+        "title":"My Launcher",
+        "picture":"JAVASCRIPT",
+        "content":"simdilik yok."
+        },
+        {
+        "title":"App Config",
+        "picture":"JSON",
+        "content":"Remote configuration and version control management for the 'English Learn With Words' mobile application."
+        },
+
+        {
+        "title":"WeatherAPI",
+        "picture":"API",
+        "content":"A modern weather forecasting application built with React, TypeScript, and Vite. Fetches real-time data from OpenWeatherMap API with a focus on Turkish cities"
+        },
+
+        {
+        "title":"Learn-English-App",
+        "picture":"REACT NATIVE",
+        "content":"A cross-platform mobile application for learning English vocabulary through interactive word-matching exercises. Built with React Native, Expo, and TypeScript."
+        },
+
+
+        {
+        "title":"ToDoListApp",
+        "picture":"JAVASCRIPT",
+        "content":"Interactive Task Management web app featuring task creation, editing, and deletion with a modern UI"
+        },
+
+
+        {
+        "title":"Pet-Care-App",
+        "picture":"JAVASCRIPT",
+        "content":"An OOP-based pet management system featuring detailed profile tracking, medical scheduling, and data-driven pet care logs."
+        }
+        ,
+
+        {
+        "title":"MemberRegisterDiscord",
+        "picture":"JAVASCRIPT",
+        "content":"Automate your Discord server's registration process with custom welcome messages and staff-controlled member verification."
+        },
+        {
+        "title":"ServerCommandsDiscord",
+        "picture":"JAVASCRIPT",
+        "content":"Scalable Discord moderation system built with Node.js and Discord.js, designed for easy command integration and server control."
+        },
+        {
+        "title":"tictactoe-react",
+        "picture":"JAVASCRIPT",
+        "content":"A modern Tic-Tac-Toe game built with React and Vite, focusing on state management, game logic algorithms, and responsive UI"
+        },
+        {
+        "title":"Bank-Queue-System-Core",
+        "picture":"JAVA",
+        "content":"Core queuing engine featuring dynamic ticket generation, priority algorithms for VIP customers, and automated service counter distribution logic."
+        }
+    ]
+}

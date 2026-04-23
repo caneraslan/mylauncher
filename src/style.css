@@ -236,21 +236,30 @@ a {
   background-color: var( --picture-bg-color);
   align-items: center;
   justify-content: center;
-  border-color: var(--border-color);
-  border-width: 1px;
   font-family: 'B612 Mono', monospace;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .title{
   display: flex;
   justify-content: center;
   height: 20px;
+  background-color: var( --picture-bg-color);
+  padding-bottom: 1.5em;
+  border-color: var(--border-color);
+  border-bottom-width: 1px;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 .content{
   display: flex;
-  padding-left:10px;
+  padding-left:1em;
+  padding-top: 1em;  
+  border-color: var(--border-color);
+  border-left: 1px solid;
+  height: 100%;
+  font-size: 0.9em;
 }
 
 .button{

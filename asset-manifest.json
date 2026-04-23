@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mylauncher/static/css/main.93eef5c6.css",
-    "main.js": "/mylauncher/static/js/main.b026dc8e.js",
+    "main.css": "/mylauncher/static/css/main.c4884f4c.css",
+    "main.js": "/mylauncher/static/js/main.ed5ea53b.js",
     "index.html": "/mylauncher/index.html",
-    "main.93eef5c6.css.map": "/mylauncher/static/css/main.93eef5c6.css.map",
-    "main.b026dc8e.js.map": "/mylauncher/static/js/main.b026dc8e.js.map"
+    "main.c4884f4c.css.map": "/mylauncher/static/css/main.c4884f4c.css.map",
+    "main.ed5ea53b.js.map": "/mylauncher/static/js/main.ed5ea53b.js.map"
   },
   "entrypoints": [
-    "static/css/main.93eef5c6.css",
-    "static/js/main.b026dc8e.js"
+    "static/css/main.c4884f4c.css",
+    "static/js/main.ed5ea53b.js"
   ]
 }

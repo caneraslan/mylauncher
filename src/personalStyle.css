@@ -1,0 +1,120 @@
+.CVname{  
+    font-size:1.8em;
+    font-weight:lighter;
+    margin-top: 5%;
+    text-align: left;
+    width: 100%;
+}
+
+.personal_information{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight:lighter;
+    font-size:1em;
+    margin-bottom: 1em;
+    border-top: 1px solid;
+    padding-top:0.3em;
+    font-style: italic;
+}
+
+
+.block{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary{
+    width: 100%;
+    margin:8%;
+}
+
+.CVtitle{
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.summary-text{
+    padding-top:0.8em;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.experience-text{
+    padding-top:1em;
+}
+
+.company{
+    padding-top: 0.2em;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.position{
+    font-size:0.96em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.location{
+    font-size:0.9em;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: right;
+}
+
+.period{
+    font-size:0.9em;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: right;
+}
+
+.highlights{
+    text-align: center;
+    font-size: 0.9em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+.education{
+    width: 100%;
+}
+
+
+.instituion{
+    padding-top: 0.5em;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.degree{
+    font-size:0.96em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.edu-text{
+    padding-bottom:0.9em;
+}
+
+
+.certifications{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+[class^="cerno"]{
+    font-size:0.9em;
+    font-weight: lighter;
+    font-style: italic;
+    padding-top: 0.5px;
+}

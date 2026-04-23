@@ -1,0 +1,87 @@
+{
+  "personal_information": {
+    "name": "Caner Aslan",
+    "location": "Kocaeli, Türkiye",
+    "phone": "+905394181826",
+    "email": "caneraslanm@gmail.com",
+    "summary": "Since my childhood, I have always been curious about electronic devices and machines. I have a background in Information Technology and Computer Engineering, with a strong focus on embedded systems, Linux, and automotive electrical design. I enjoy researching new technologies and have experience in high-voltage (HV) and low-voltage (LV) wire harness systems."
+  },
+  "experience": [
+    {
+      "company": "Nursan Kablo Donanımları San. Ve Tic A.Ş",
+      "position": "Responsible Design Engineer",
+      "location": "Kocaeli, Türkiye",
+      "period": "Jan 2024 - Present",
+      "highlights": [
+        "Ensured compliance with IATF 16949 quality management and risk management.",
+        "Conducted IATF 16949 audit processes for Ford and Togg projects.",
+        "Managed Design FMEA studies and APQP processes.",
+        "Led task distribution and cross-training initiatives within the design team.",
+        "Managed lead times for Ford Cargo My16 and Togg Battery Harness projects."
+      ]
+    },
+    {
+      "company": "Nursan Kablo Donanımları San. Ve Tic A.Ş",
+      "position": "Specialist Design Engineer",
+      "period": "Feb 2022 - Jan 2024",
+      "highlights": [
+        "Key role in HV and LV wire harness systems for Ford, Otokar, Togg, and Renault.",
+        "Contributed to 3D design, component selection (connectors, splices, wires) for Ford Cargo MY16/MY18/V769 and Togg battery designs.",
+        "Ensured safety and performance standards through component integration.",
+        "Active implementation and compliance with IATF 16949 standards."
+      ]
+    },
+    {
+      "company": "Nursan Kablo Donanımları San. Ve Tic A.Ş",
+      "position": "Design Engineer",
+      "period": "Jun 2019 - Feb 2022",
+      "highlights": [
+        "Designed HV and LV harnesses for Ford Cargo and B460 projects.",
+        "Developed Java solutions for custom plugins in Capital/Vesys and Zuken applications.",
+        "Administered Capital/Vesys application settings, libraries, and data management.",
+        "Automated tasks and reporting using Microsoft Excel macros.",
+        "Established network data sharing and communication between devices."
+      ]
+    },
+    {
+      "company": "Tofaş Türk Otomobil A.Ş. (Contract)",
+      "position": "Design Engineer",
+      "location": "Bursa, Türkiye",
+      "period": "Dec 2019 - Mar 2020",
+      "highlights": [
+        "Contributed to the 275 Doblo Mulletti project.",
+        "Designed electrical systems, including cable, socket, and terminal selection for LV wiring.",
+        "Performed 3D work on NX for connectors, bundles, and clips positioning.",
+        "Collaborated with teams to ensure quality and safety standards."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "İskenderun Teknik Üniversitesi (İSTE)",
+      "degree": "Computer Engineer",
+      "location": "Hatay, Türkiye",
+      "period": "2013 - 2019"
+    },
+    {
+      "institution": "Sabancı Anadolu Tek. ve End. Mes. Lisesi",
+      "degree": "Computer Programming",
+      "location": "Kocaeli, Türkiye",
+      "period": "2009 - 2013"
+    }
+  ],
+  "certifications": [
+    "IATF 16949 (AGC)",
+    "MSA&SPC (NURSAN KABLO DONANIMLARI)",
+    "APQP&PPAP (NURSAN KABLO DONANIMLARI)",
+    "Zuken Design (CPV)",
+    "Tasarım Hatası Modu ve Etkin Analiz - DFMEA (Grupas)",
+    "Catia (Elginkan)",
+    "Temel Elektronik ve Robotiğe Giriş (BTK)",
+    "Algorithms and Data Structures (BTK)"
+  ],
+  "extra_info": {
+    "languages_and_tools": ["C/C++", "Java", "Linux", "NX", "Catia", "Capital/Vesys", "Zuken", "Excel Macros"],
+    "other_interests": ["YouTube content creation (educational videos)", "Author of an unpublished C++ book"]
+  }
+}

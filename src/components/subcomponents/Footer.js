@@ -4,21 +4,7 @@ import { IoIosMail } from "react-icons/io";
 import { PiFilePdfLight } from "react-icons/pi";
 import { useReactToPrint } from 'react-to-print';
 
-const Footer = ({ page,aboutMeRef }) => {
-    const handlePrint = useReactToPrint({
-        content: () => 'aboutme',
-        documentTitle: "caner_aslan_cv",
-    });
-
-    // Sayfa 3 değilse veya 'aboutme' ID'li element o an DOM'da yoksa hata almamak için kontrol
-    const onDownloadClick = () => {
-        const element = 'aboutme'
-        if (element) {
-            handlePrint();
-        } else {
-            console.warn("Hata: 'aboutme' ID'li alan bulunamadı. Bu bileşenin render edildiğinden emin olun.");
-        }
-    };
+const Footer = ({ page,aboutMeRef,handlePrint }) => {
 
     return (<>
         
@@ -32,7 +18,7 @@ const Footer = ({ page,aboutMeRef }) => {
             {page === 3 && (
                 <div className="icon" title="Download as PDF">
                     <PiFilePdfLight 
-                        onClick={onDownloadClick} 
+                        onClick={handlePrint} 
                         style={{ cursor: 'pointer' }}
                     />
                 </div>

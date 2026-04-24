@@ -284,3 +284,41 @@ a {
   border:  1px solid;
   border-color: black;
 }
+
+@media print {
+    @page {
+        size: A4;
+        margin: 10mm; 
+    } 
+
+    body, .body, .aboutpage, .index, .pageview {
+        background-color: white !important;
+        color: black !important;
+        background: white !important; 
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact;
+    }
+
+    .aboutpage {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important; 
+        width: 100% !important;
+        transition: none !important;
+        opacity: 1 !important;
+        display: block !important; 
+    }
+
+    .theme, 
+    .navbar, 
+    .footer, 
+    .theme-toggle-button, 
+    .button,
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .CVname, .CVtitle, .summary-text, .experience-text, .edu-text, .personal_information div {
+        color: black !important;
+    }
+} 

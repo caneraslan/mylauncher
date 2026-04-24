@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef} from "react";
 import Footer from "./components/subcomponents/Footer.js";
 import Navbar from "./components/subcomponents/Navbar.js";
 import { CgSquare } from "react-icons/cg";
 import { useTheme } from "./StyleContext.js";
 import Pagedesktop from "./components/Pagedesktop.js";
+import { useReactToPrint } from 'react-to-print';
 
 const App = () => {
 	const [page, changedPage] = useState(0);
@@ -14,6 +15,16 @@ const App = () => {
 	
 	const { toggleTheme } = useTheme();
 	const [type, setType] = useState(false);
+
+	const componentRef = useRef();
+
+  	const handlePrint = useReactToPrint({
+  // Bazı versiyonlarda doğrudan referansı vermek, bazılarında fonksiyon döndürmek gerekir.
+  // En güvenli hali budur:
+  contentRef: componentRef, 
+  documentTitle: 'Caner_Aslan_CV',
+});
+
 
 	useEffect(() => {
 		toggleTheme();
@@ -85,6 +96,7 @@ const App = () => {
 				<Navbar changedPage={changedPage} style={desktopNav} offset={offset} />
 				<div className="index">
 					<Pagedesktop
+						componentRef={componentRef}
 						page={page}
 						vh={vh}
 						blogSize={blogSize}
@@ -96,7 +108,7 @@ const App = () => {
 				</div>
 			</>
 
-			<Footer page={page} />
+			<Footer page={page} handlePrint={handlePrint}/>
 
 			<div
 				className="theme"

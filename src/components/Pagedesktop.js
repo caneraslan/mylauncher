@@ -1,5 +1,5 @@
 import Blog from './pages/Blog';
-import { About } from './pages/About';
+import  About  from './pages/About';
 import { Home } from './pages/Home';
 
 const containerStyle = {
@@ -13,9 +13,9 @@ const containerStyle = {
 		left: 0,
 	};
 
-const Pagedesktop = ({ page, vh, blogSize, setVH, offset }) => {
-  if(page === 2 ) return ( <Blog blogSize={blogSize}/>);  //Changed name => My apps 
-  else if(page === 3) return ( < About /> );
+const Pagedesktop = ({ componentRef, page, vh, blogSize, setVH, offset }) => {
+  if(page === 2 ) return ( <Blog blogSize={blogSize} />);  //Changed name => My apps 
+  else if(page === 3) return ( < About ref={componentRef}/> );
   else return ( <Home containerStyle={containerStyle}/> );
 };
 

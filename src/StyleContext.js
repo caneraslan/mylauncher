@@ -15,6 +15,7 @@ export const StyleProvider = ({ children }) => {
     shadowcolor: (isDarkMode ? 'rgba(31, 29, 29, 0.62)':'rgba(230, 225, 225, 0.47)' ),  
     picturebgcolor: (isDarkMode ? 'rgb(117, 7, 7)':'rgb(117, 7, 7)' ),  
     bordercolor: (isDarkMode ? 'rgba(204, 204, 204, 1)': 'rgba(138, 138, 138, 1)' ), 
+    blogtitle: (isDarkMode ?  '#000000ff' : '#ffffffff'),
   };
 
   useEffect(()=>{   
@@ -26,6 +27,7 @@ export const StyleProvider = ({ children }) => {
     root.style.setProperty('--shadow-bg-color', theme.shadowcolor);
     root.style.setProperty('--picture-bg-color', theme.picturebgcolor);
     root.style.setProperty('--border-color', theme.bordercolor);
+    root.style.setProperty('--blog-title-color', theme.blogtitle);
   },[isDarkMode]);
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);

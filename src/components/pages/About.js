@@ -1,9 +1,10 @@
 import data from "../../resume.json";
 import personalStyle from "../../personalStyle.css";
 
+//Burada hata var forwardRef olan tanimlama sorunlu ref kisminda hata aliyoruz. 
 export const About = () => {
 	return (
-		<>
+		<> 
 			<div
 				className="aboutpage"
 				id="aboutme"

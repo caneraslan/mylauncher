@@ -1,111 +1,111 @@
-import { useState,useEffect } from 'react'
-import Footer from './components/subcomponents/Footer.js';
-import Navbar from './components/subcomponents/Navbar.js';
+import { useState, useEffect } from "react";
+import Footer from "./components/subcomponents/Footer.js";
+import Navbar from "./components/subcomponents/Navbar.js";
 import { CgSquare } from "react-icons/cg";
-import { useTheme } from './StyleContext.js';
-import Pagedesktop from './components/Pagedesktop.js';
-import Pagemobil from './components/Pagemobil.js';
+import { useTheme } from "./StyleContext.js";
+import Pagedesktop from "./components/Pagedesktop.js";
 
 const App = () => {
-  const [page, changedPage] = useState(0);
-  //const [lang, setLang] = useState();
-  const [vh, setVH] = useState([window.innerWidth, window.innerHeight]);
-  const [offset, setOffset] = useState(window.pageYOffset);
+	const [page, changedPage] = useState(0);
+	//const [lang, setLang] = useState();
+	const [blogSize, setBlogSize] = useState(4);
+	const [vh, setVH] = useState([window.innerWidth, window.innerHeight]);
+	const [offset, setOffset] = useState(window.pageYOffset);
+	
+	const { toggleTheme } = useTheme();
+	const [type, setType] = useState(false);
 
-  const {  toggleTheme } = useTheme();
-  const [type, setType] = useState(false); 
+	useEffect(() => {
+		toggleTheme();
+		type ? console.log("true") : console.log("false");
+	}, [type]);
 
-    useEffect(()=>{
-      toggleTheme();
-   type ? console.log('true'):console.log('false');
-   
-  },[type]);
 
-  const miniNav = {
-    position: 'fixed',
-    top: '18px',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    width:'400px',
-    height: '40px',
-    fontWeight: 'bold', 
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',    
-    alignContent: 'center',  
-    justifyItems: 'center', 
-    zIndex: 1000
-  }
+  // For Mobil
+	const miniNav = {
+		position: "fixed",
+		top: "18px",
+		left: "50%",
+		transform: "translateX(-50%)",
+		width: "400px",
+		height: "40px",
+		fontWeight: "bold",
+		display: "flex",
+		justifyContent: "space-between",
+		alignItems: "center",
+		alignContent: "center",
+		justifyItems: "center",
+		zIndex: 1000,
+	};
 
-  const desktopNav= {
-    position: 'fixed',
-    top: '18px',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    width: '500px',
-    height: '40px',
-    fontWeight: 'bold', 
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',    
-    alignContent: 'center',  
-    justifyItems: 'center',  
-    zIndex: 1000
-  }
-  
-  useEffect(() => {
-   
-   const onScroll = () => setOffset(window.pageYOffset);
-   console.log("offset: ", offset);
+  // For Desktop
+	const desktopNav = {
+		position: "fixed",
+		top: "18px",
+		left: "50%",
+		transform: "translateX(-50%)",
+		width: "500px",
+		height: "40px",
+		fontWeight: "bold",
+		display: "flex",
+		justifyContent: "space-between",
+		alignItems: "center",
+		alignContent: "center",
+		justifyItems: "center",
+		zIndex: 1000,
+	};
 
-  const handleResize = () => {
-    console.log("Yeni Boyut:", window.innerHeight, window.innerWidth);
-    console.log("Yeterli mi :", vh > [600,600]);
-    setVH([window.innerWidth,window.innerHeight]);
-  };
-  
-  window.addEventListener('resize', handleResize);
-  window.addEventListener('scroll', onScroll);
-  
-  return () => {
-    window.removeEventListener('resize', handleResize);
-    window.removeEventListener('scroll', onScroll);
-  };
-}, []);
-  
-  return (
-    <div className='body' >
-      {
-          (vh[0] > 600 && vh[1] > 500) ? ( 
-            //YATAY EKRAN 
-          <> 
-           <Navbar changedPage={changedPage} style={desktopNav} offset={offset}/>
-            <div className="index">
-              <Pagedesktop page={page} vh={vh} setVH={(val)=>{setVH(val)} } offset={offset}/> 
-            </div> 
-           </>
-      ) : 
-      
-      ( // MOBIL EKRAN 
-      <> 
-        <Navbar changedPage={changedPage} style={miniNav} offset={offset} />
-        <div className="index">
-          <Pagemobil page={page} vh={vh} setVH={(val)=>{setVH(val)}} offset={offset}/>
-        </div>
-      </>
-      )}
-      
-      <Footer/>
+	useEffect(() => {
+		const onScroll = () => setOffset(window.pageYOffset);
+		console.log("vh: ", vh);
 
-       <div className='theme' onClick={()=>{
-        setType(p=>!p )
-      }} >
-       
-        <CgSquare />
-      
-      </div>
 
-    </div>
-  );
-}
+		const handleResize = () => {
+			const currentHeight = window.innerHeight;
+			const currentWidth = window.innerWidth;
+
+			const newBlogSize = Math.floor(currentHeight / 200 );
+			// console.log("Yeni Boyut:", currentWidth, currentHeight, newBlogSize);
+    		setBlogSize(newBlogSize);
+			setVH([currentWidth, currentHeight]);
+		};
+
+		window.addEventListener("resize", handleResize);
+		window.addEventListener("scroll", onScroll);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+			window.removeEventListener("scroll", onScroll);
+		};
+	}, []);
+
+	return (
+		<div className="body">
+			<>
+				<Navbar changedPage={changedPage} style={desktopNav} offset={offset} />
+				<div className="index">
+					<Pagedesktop
+						page={page}
+						vh={vh}
+						blogSize={blogSize}
+						setVH={(val) => {
+							setVH(val);
+						}}
+						offset={offset}
+					/>
+				</div>
+			</>
+
+			<Footer page={page} />
+
+			<div
+				className="theme"
+				onClick={() => {
+					setType((p) => !p);
+				}}>
+				<CgSquare />
+			</div>
+		</div>
+	);
+};
 export default App;

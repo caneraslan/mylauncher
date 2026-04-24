@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react'
-
-const HOMEKEY =' ➧ HOME ';
-const BLOGKEY = '➧ MY APPS';
-const ABOUTKEY = '➧ ABOUT ME';
+const HOMEKEY =' HOME ';
+const BLOGKEY = ' MY APPS';
+const ABOUTKEY = ' ABOUT ME';
 const Navbar = ( 
   {
     changedPage, style, offset

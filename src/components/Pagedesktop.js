@@ -14,7 +14,7 @@ const containerStyle = {
 	};
 
 const Pagedesktop = ({ componentRef, page, vh, blogSize, setVH, offset }) => {
-  if(page === 2 ) return ( <Blog blogSize={blogSize} />);  //Changed name => My apps 
+  if(page === 2 ) return ( <Blog blogSize={blogSize} />);  //Changed name => My apps
   else if(page === 3) return ( < About ref={componentRef}/> );
   else return ( <Home containerStyle={containerStyle}/> );
 };

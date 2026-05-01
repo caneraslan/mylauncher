@@ -10,7 +10,7 @@ const About = forwardRef((props, ref) => {
             ref={ref} 
             style={{
                 transition: "opacity 0.5s ease-in-out",
-                opacity: 1 // Görünürlük için eklendi
+                opacity: 1 
             }}
         >
             <div className="CVname"> {data.personal_information.name} </div>

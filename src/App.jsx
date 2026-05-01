@@ -19,8 +19,6 @@ const App = () => {
 	const componentRef = useRef();
 
   	const handlePrint = useReactToPrint({
-  // Bazı versiyonlarda doğrudan referansı vermek, bazılarında fonksiyon döndürmek gerekir.
-  // En güvenli hali budur:
   contentRef: componentRef, 
   documentTitle: 'Caner_Aslan_CV',
 });

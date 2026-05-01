@@ -3,10 +3,30 @@
         {
         "title":"My Launcher",
         "picture":"JAVASCRIPT",
-        "content":"simdilik yok."
+        "content":"A fully responsive personal portfolio website and blog designed to showcase my software engineering projects and technical articles. Developed with React and deployed using GitHub Pages, the site features a clean UI/UX, integrated Markdown support for blogging, and custom-built components"
         },
         {
-        "title":"App Config",
+        "title":"Siemens Capital/Vesys Bom Plugin",
+        "picture":"JAVA",
+        "content":"Customer Bom for 2D Harness Drawing on Siemens Capital/Vesys"
+        },
+        {
+        "title":"Siemens Capital/Vesys Wire Plugin",
+        "picture":"JAVA",
+        "content":"Customer Wire list for 2D Harness Drawing on Siemens Capital/Vesys"
+        },
+        {
+        "title":"Siemens Capital/Vesys Customer Query For Drawing",
+        "picture":"JAVA",
+        "content":"Customer Query for location bundle or harness items for 2D Harness Drawing on Siemens Capital/Vesys"
+        },
+        {
+        "title":"C++ Programming: A Technical Guide (Turkish Edition) – Author",
+        "picture":"C++",
+        "content":"This book contains the knowledge I gained during my vocational high school and university years. It was requested for publication, but due to financial conditions, it could not be printed. Since I really wanted to publish and share it myself, I decided to share my book via GitHub. In terms of content, I explained the transition from entry-level programming to the intermediate level. I hope it will be a good publication for my friends who read or will read it."
+        },
+        {
+        "title":"Remote Control For My App",
         "picture":"JSON",
         "content":"Remote configuration and version control management for the 'English Learn With Words' mobile application."
         },
@@ -18,7 +38,7 @@
         },
 
         {
-        "title":"Learn-English-App",
+        "title":"Learn English App",
         "picture":"REACT NATIVE",
         "content":"A cross-platform mobile application for learning English vocabulary through interactive word-matching exercises. Built with React Native, Expo, and TypeScript."
         },
@@ -32,29 +52,29 @@
 
 
         {
-        "title":"Pet-Care-App",
+        "title":"Pet Care App",
         "picture":"JAVASCRIPT",
         "content":"An OOP-based pet management system featuring detailed profile tracking, medical scheduling, and data-driven pet care logs."
         }
         ,
 
         {
-        "title":"MemberRegisterDiscord",
+        "title":"Member Registe Discord",
         "picture":"JAVASCRIPT",
         "content":"Automate your Discord server's registration process with custom welcome messages and staff-controlled member verification."
         },
         {
-        "title":"ServerCommandsDiscord",
+        "title":"Server Commands Discord",
         "picture":"JAVASCRIPT",
         "content":"Scalable Discord moderation system built with Node.js and Discord.js, designed for easy command integration and server control."
         },
         {
-        "title":"tictactoe-react",
+        "title":"Tiktaktoe React",
         "picture":"JAVASCRIPT",
         "content":"A modern Tic-Tac-Toe game built with React and Vite, focusing on state management, game logic algorithms, and responsive UI"
         },
         {
-        "title":"Bank-Queue-System-Core",
+        "title":"Bank Queue System Core",
         "picture":"JAVA",
         "content":"Core queuing engine featuring dynamic ticket generation, priority algorithms for VIP customers, and automated service counter distribution logic."
         }

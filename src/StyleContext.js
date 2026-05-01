@@ -12,7 +12,7 @@ export const StyleProvider = ({ children }) => {
     navbgcolor: (isDarkMode ? 'rgba(0, 0, 0, 0.87)' : '#ffffff'),
     navcolor: (isDarkMode ? 'rgb(224, 224, 224)' : '#000000'),  
     hovercolor: (isDarkMode ? 'rgb(165, 15, 15)' : 'rgb(165, 15, 15)'), 
-    shadowcolor: (isDarkMode ? 'rgba(31, 29, 29, 0.62)':'rgba(230, 225, 225, 0.47)' ),  
+    shadowcolor: (isDarkMode ? 'rgba(75, 73, 73, 0.62)':'rgba(230, 225, 225, 0.47)' ),  
     picturebgcolor: (isDarkMode ? 'rgb(117, 7, 7)':'rgb(117, 7, 7)' ),  
     bordercolor: (isDarkMode ? 'rgba(204, 204, 204, 1)': 'rgba(138, 138, 138, 1)' ), 
     blogtitle: (isDarkMode ?  '#000000ff' : '#ffffffff'),

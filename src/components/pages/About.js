@@ -1,6 +1,7 @@
 import data from "../../resume.json";
 import personalStyle from "../../personalStyle.css";
 import React, { forwardRef } from "react";
+import myapps from "../../myapps.json";
 
 const About = forwardRef((props, ref) => {
 	return (
@@ -42,6 +43,18 @@ const About = forwardRef((props, ref) => {
 					))}
 				</div>
 			</div>
+
+            <div className="myprojects">
+                <div className="CVtitle">MY PROJECTS</div>
+                {myapps.myapps.map((myapp, index)=>(
+                    <>
+                        <div className="proje-title"> • {myapp.title} 
+                        <span className="proje-type">  {myapp.picture   }</span>  </div>
+                        <div className="proje-desc"> {myapp.content}</div>
+                    </>
+            ))}
+                
+            </div>
 
 			<div className="education">
 				<div className="CVtitle"> EDUCATION </div>

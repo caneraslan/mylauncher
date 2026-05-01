@@ -71,14 +71,25 @@
     }
   ],
   "certifications": [
-    "IATF 16949 (AGC)",
-    "MSA&SPC (NURSAN KABLO DONANIMLARI)",
-    "APQP&PPAP (NURSAN KABLO DONANIMLARI)",
-    "Zuken Design (CPV)",
-    "Tasarım Hatası Modu ve Etkin Analiz - DFMEA (Grupas)",
-    "Catia (Elginkan)",
-    "Temel Elektronik ve Robotiğe Giriş (BTK)",
-    "Algorithms and Data Structures (BTK)"
+    {"name":"C ile Mikrodenetleyici Programlama", "company":"Elginkan", "date":"2024", "link":""},
+    {"name":"Kotlin Ile Android Mobil Uygulama", "company":"BTK", "date":"2023", "link":"https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=rKjhGJKZwg"},
+    {"name":"Legacy JavaScript Algorithms and Data Structures V7", "company":"FreeCodeCamp", "date":"2022", "link":"https://www.freecodecamp.org/certification/caneraslan/javascript-algorithms-and-data-structures"},
+    {"name":"Legacy Responsive Web Design V8", "company":"FreeCodeCamp", "date":"2021", "link":"https://www.freecodecamp.org/certification/caneraslan/responsive-web-design"},
+    {"name":"Introduction to Deep Learning", "company":"Global Al Hub", "date":"2021", "link":""},
+    {"name":"Introduction to Python", "company":"Global Al Hub", "date":"2021", "link":""},
+    {"name":"Temel Elektronik ve Robotige Giris", "company":"BTK", "date":"2023", "link":""},
+    {"name":"Algorithms and Data Structures ", "company":"BTK", "date":"2022", "link":""},
+    {"name":"Javascript", "company":"Sololearn", "date":"2022", "link":"https://www.sololearn.com/en/certificates/CT-SWHTHDKR"},
+    {"name":"Java", "company":"Sololearn", "date":"2022", "link":"https://www.sololearn.com/en/certificates/CT-VKF0AWVQ"},
+    {"name":"Batarya Elektrikli Arac Bakim Ve Onarim Islemleri Gelistirme ve Uyum", "company":"Elginkan", "date":"2025", "link":""},
+    {"name":"IATF 16949", "company":"AGC", "date":"2022", "link":""},
+    {"name":"MSA&SPC", "company":"NURSAN KABLO DONANIMLARI", "date":"2022", "link":""},
+    {"name":"APQP&PPAP", "company":"NURSAN KABLO DONANIMLARI", "date":"2020", "link":""},
+    {"name":"Zuken Design", "company":"CPV", "date":"2019", "link":""},
+    {"name":"Tasarım Hatası Modu ve Etkin Analiz(DFMEA)", "company":"GRUPAS", "date":"2022", "link":""},
+    {"name":"Catia", "company":"Elginkan", "date":"2024", "link":""},
+    {"name":"Etkili Iletisim Stratejileri", "company":"BTK", "date":"2022", "link":""},
+    {"name":"Motor Yonetim Sistemleri Gelistirme ve Uyum Egitimi", "company":"Elginkan", "date":"2025", "link":""}
   ],
   "extra_info": {
     "languages_and_tools": ["C/C++", "Java", "Linux", "NX", "Catia", "Capital/Vesys", "Zuken", "Excel Macros"],

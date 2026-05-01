@@ -112,7 +112,6 @@
     padding-top: 1em;
     padding-bottom: 5em;
 }
-
 [class^="cerno"]{
     font-size:0.9em;
     font-weight: lighter;
@@ -120,7 +119,23 @@
     padding-top: 0.5px;
 }
 
+[class^="cerno"] .cername{
+    text-align: left;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    font-size: 0.96em;
+}
+[class^="cerno"] .cerdate{
+    font-size:0.96em;
+    text-align: right;
+}
 
+abbr{
+    text-decoration: none;
+}
 @media print {
     @page {
         size: A4;

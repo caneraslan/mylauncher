@@ -3,80 +3,86 @@
         {
         "title":"My Launcher",
         "picture":"JAVASCRIPT",
-        "content":"A fully responsive personal portfolio website and blog designed to showcase my software engineering projects and technical articles. Developed with React and deployed using GitHub Pages, the site features a clean UI/UX, integrated Markdown support for blogging, and custom-built components"
+        "content":"A fully responsive personal portfolio website and blog designed to showcase my software engineering projects and technical articles. Developed with React and deployed using GitHub Pages, the site features a clean UI/UX, integrated Markdown support for blogging, and custom-built components",
+        "link":"https://github.com/caneraslan/mylauncher"
         },
         {
         "title":"Siemens Capital/Vesys Bom Plugin",
         "picture":"JAVA",
-        "content":"Customer Bom for 2D Harness Drawing on Siemens Capital/Vesys"
+        "content":"Customer Bom for 2D Harness Drawing on Siemens Capital/Vesys",
+        "link":""
         },
         {
         "title":"Siemens Capital/Vesys Wire Plugin",
         "picture":"JAVA",
-        "content":"Customer Wire list for 2D Harness Drawing on Siemens Capital/Vesys"
+        "content":"Customer Wire list for 2D Harness Drawing on Siemens Capital/Vesys",
+        "link":""
         },
         {
         "title":"Siemens Capital/Vesys Customer Query For Drawing",
         "picture":"JAVA",
-        "content":"Customer Query for location bundle or harness items for 2D Harness Drawing on Siemens Capital/Vesys"
+        "content":"Customer Query for location bundle or harness items for 2D Harness Drawing on Siemens Capital/Vesys",
+        "link":""
         },
         {
         "title":"C++ Programming: A Technical Guide (Turkish Edition) – Author",
         "picture":"C++",
-        "content":"This book contains the knowledge I gained during my vocational high school and university years. It was requested for publication, but due to financial conditions, it could not be printed. Since I really wanted to publish and share it myself, I decided to share my book via GitHub. In terms of content, I explained the transition from entry-level programming to the intermediate level. I hope it will be a good publication for my friends who read or will read it."
+        "content":"This book contains the knowledge I gained during my vocational high school and university years. It was requested for publication, but due to financial conditions, it could not be printed. Since I really wanted to publish and share it myself, I decided to share my book via GitHub. In terms of content, I explained the transition from entry-level programming to the intermediate level. I hope it will be a good publication for my friends who read or will read it.",
+        "link":""
         },
         {
         "title":"Remote Control For My App",
         "picture":"JSON",
-        "content":"Remote configuration and version control management for the 'English Learn With Words' mobile application."
+        "content":"Remote configuration and version control management for the 'English Learn With Words' mobile application.",
+        "link":"https://github.com/caneraslan/app-config"
         },
-
         {
         "title":"WeatherAPI",
         "picture":"API",
-        "content":"A modern weather forecasting application built with React, TypeScript, and Vite. Fetches real-time data from OpenWeatherMap API with a focus on Turkish cities"
+        "content":"A modern weather forecasting application built with React, TypeScript, and Vite. Fetches real-time data from OpenWeatherMap API with a focus on Turkish cities",
+        "link":"https://github.com/caneraslan/WeatherAPI"
         },
-
         {
         "title":"Learn English App",
         "picture":"REACT NATIVE",
-        "content":"A cross-platform mobile application for learning English vocabulary through interactive word-matching exercises. Built with React Native, Expo, and TypeScript."
+        "content":"A cross-platform mobile application for learning English vocabulary through interactive word-matching exercises. Built with React Native, Expo, and TypeScript.",
+        "link":"https://github.com/caneraslan/Learn-English-App"
         },
-
-
         {
         "title":"ToDoListApp",
         "picture":"JAVASCRIPT",
-        "content":"Interactive Task Management web app featuring task creation, editing, and deletion with a modern UI"
+        "content":"Interactive Task Management web app featuring task creation, editing, and deletion with a modern UI",
+        "link":"https://github.com/caneraslan/ToDoListApp"
         },
-
-
         {
         "title":"Pet Care App",
         "picture":"JAVASCRIPT",
-        "content":"An OOP-based pet management system featuring detailed profile tracking, medical scheduling, and data-driven pet care logs."
-        }
-        ,
-
+        "content":"An OOP-based pet management system featuring detailed profile tracking, medical scheduling, and data-driven pet care logs.",
+        "link":"https://github.com/caneraslan/Pet-Care-App"
+        },
         {
-        "title":"Member Registe Discord",
+        "title":"Member Register Discord",
         "picture":"JAVASCRIPT",
-        "content":"Automate your Discord server's registration process with custom welcome messages and staff-controlled member verification."
+        "content":"Automate your Discord server's registration process with custom welcome messages and staff-controlled member verification.",
+        "link":"https://github.com/caneraslan/MemberRegisterDiscord"
         },
         {
         "title":"Server Commands Discord",
         "picture":"JAVASCRIPT",
-        "content":"Scalable Discord moderation system built with Node.js and Discord.js, designed for easy command integration and server control."
+        "content":"Scalable Discord moderation system built with Node.js and Discord.js, designed for easy command integration and server control.",
+        "link":"https://github.com/caneraslan/ServerCommandsDiscord"
         },
         {
         "title":"Tiktaktoe React",
         "picture":"JAVASCRIPT",
-        "content":"A modern Tic-Tac-Toe game built with React and Vite, focusing on state management, game logic algorithms, and responsive UI"
+        "content":"A modern Tic-Tac-Toe game built with React and Vite, focusing on state management, game logic algorithms, and responsive UI",
+        "link":"https://github.com/caneraslan/tictactoe-react"
         },
         {
         "title":"Bank Queue System Core",
         "picture":"JAVA",
-        "content":"Core queuing engine featuring dynamic ticket generation, priority algorithms for VIP customers, and automated service counter distribution logic."
+        "content":"Core queuing engine featuring dynamic ticket generation, priority algorithms for VIP customers, and automated service counter distribution logic.",
+        "link":"https://github.com/caneraslan/Bank-Queue-System-Core"
         }
     ]
 }

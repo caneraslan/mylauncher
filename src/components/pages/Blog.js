@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import data from "../../myapps.json";
 
-const BlogContext = ({ title, picture, content }) => {
-	return (
+const BlogContext = ({ title, picture, content, link }) => {
+	//<a href={link} target='_blank' rel='noreferrer'>
+	const blogitem = ( 
 		<div className="blog-item">
-			{" "}
-			{}
 			<div className="picture"> {picture} </div>
 			<div className="subarea">
-				<div className="title"> ➤ {title} </div>
+				<div className="title"> {link !== '' ? '↗ ' : '• '}    {title} </div>
 				<div className="content"> {content} </div>
 			</div>
-		</div>
+		</div> );
+
+	return (
+		 link === '' ? blogitem : <a href={link} target='_blank' rel='noreferrer'>{blogitem}</a>
 	);
 };
 
@@ -38,6 +40,7 @@ const Blog = ({blogSize} ) => {
 						title={e.title.toUpperCase()}
 						picture={e.picture}
 						content={e.content}
+						link={e.link}
 					/>
 				))}
 			</div>
